@@ -155,7 +155,7 @@ function push_pieces {
       board[$second]=0
       (( pieces-- ))
       (( change=1 ))
-      (( score += board[first] ))
+      (( score += board[first] * 2))
       printf "joined piece from [%d] with [%d], new value=%d\n" \
         "$second" "$first" "${board[$first]}" >&3
     else
